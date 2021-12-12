@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>{{ . }}</div>
+    <div><a href="/{{ . }}">Path</a></div>
+    <div><a href="/?q={{ . }}">Query</a></div>
+    <div><a onclick="f('{{ . }}')">Onclick</a></div>
+
+    <!-- <div>The date/time is {{ . | fdate }}</div>
+    <div>The date/time is {{ fdate . }}</div> -->
+
+    <!-- <div>The dot is {{ . }}</div>
+    <div>
+        {{ with "" }}
+        Now the dot is {{ . }}
+        {{ else }}
+        The dot is still {{ . }}
+        {{ end }}
+    </div>
+    <div>The dot is {{ . }} again</div> -->
+
+    <!-- {{ if . }}
+        Number is greater than 5!
+        {{ else }}
+        Number is 5 or less!
+    {{ end }}  -->
+    <!-- <ul>
+    {{ range . }}
+     <li>{{ . }}</li>
+     {{ else }}
+     <li>Nothing to show.</li>
+    {{ end }}
+    </ul>  -->
+</body>
+
+</html>
